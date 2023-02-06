@@ -1,0 +1,412 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    width: auto;
+    height: auto;
+}
+*{
+    z-index: 2;
+}
+
+/* NAVBAR */
+nav{
+    z-index: 3;
+    width: 100%;
+} 
+
+.nav-color{
+    background-color: #2E4B3F;
+    transition: all ease-in-out 0.3s;
+}
+
+.bg-transparent{
+    transition: all ease-in 0.3s;
+}
+
+.collapse{
+    border-radius: 8px;
+    padding: 20px;
+}
+
+
+.navbar-brand {
+    font-family:SF Pro Rounded;
+    font-weight: bold;
+    color: #1FA7FF;
+    font-size: 32px;
+}
+
+.navbar-brand img {
+    width: 32px;
+    height: 32px;
+    margin-top: -5px ;
+}
+
+.nav-item a:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid;
+    border-radius: 5px;
+    width: 50%;
+    margin: auto;
+}
+
+
+.btn {
+    color: #2ECB89;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    font-size: 16px;
+    border: 0px;
+}
+
+/* HERO */
+.hero {
+    width: 100%;
+    height: 800px;
+    background-size: cover ;
+    position: absolute;
+    background: linear-gradient(
+        to right,
+        #FFFFFF 0%,
+        #FFFFFF 50%,
+        #29A973 50%,
+        #29A973 100%
+    );
+}
+
+.hero .txt {
+    margin-left: 80px;
+    text-align: left;
+    z-index: 2;
+} 
+
+.hero h1 {
+    font-family: SF Pro Rounded;
+    color: #404040;
+    font-weight: 600px;
+    font-size: 56px;
+    line-height: 67px;
+    letter-spacing: 3%;
+}
+
+.hero .content p {
+    max-width: 600px;
+    font-size: 18px;    
+    text-align: left;
+    line-height: 30px;
+    color:#787878;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.hero a {
+    color: #FFFFFF;
+    padding: 12px 40px;
+    gap: 10px;
+    border-radius: 16px;
+    background-color: #2ECB89;
+} 
+
+.hero a:hover::after {
+    color: #FFFFFF;
+    padding: 12px 40px;
+    gap: 10px;
+    border-radius: 16px;
+    background-color: #2ECB89;
+} 
+
+.hero img {
+    position: absolute;
+    width: 500px;
+    height: auto;
+    left: auto;
+    right: 70px;
+    top: 50px;
+    z-index: 1;
+}
+
+
+/* CONTENT */
+#content1{
+    margin-right: auto;
+    display: flex;
+}
+
+.container1 {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    margin-top: 648px;
+    background-color: #2E4B3F;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 80px;
+}
+
+.container1::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.container1  h1{
+    font-family: SF Pro Rounded;
+    font-size: 56px;
+    padding-left: 60px;
+}
+
+
+#content2{
+    width: 100%;
+    height: auto;
+    padding-bottom: 60px;
+    margin-top: 850px;
+}
+
+.container2 img{
+    padding-top: 10px;
+}
+
+.container2 a{
+    width: 89px;
+    height: 36px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    text-decoration: none;
+    padding-top: 30px;
+    /* identical to box height */
+    
+    letter-spacing: 0.03em;
+    
+    color: #5F5F5F;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.container2 .sp{
+    width: 206px;
+    height: 30px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 87%;
+    padding-top: -50px;
+    text-decoration: none;
+    /* identical to box height */
+    
+    
+    color: #2ECB89;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0; 
+}
+
+.container2 .studies{
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.container2 .card-body{
+    padding: 30px;
+}
+
+
+.container2 h4{
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    
+    color: #404040;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.container2 p{
+    width: 1080px;
+    height: 36px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    /* padding-left: 220px;
+    padding-right: 220px; */
+    /* identical to box height */
+    
+    
+    color: #787878;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.container2 .card{
+    width: 340px; 
+    height: auto; 
+    border-radius: 0px; 
+    border:0px; 
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    padding-bottom: 30px;
+}
+
+.container2 .hal{
+    padding-left: 160px;
+    margin-top: -20px;
+}
+
+.container2 .page-link{
+    border: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.container2 ul li a{
+    margin-top: 30px;
+}
+
+/* FOOTER */
+footer {
+    background: #2E4B3F;
+	padding: 60px 0px 5px 0px;
+    width: 100%;
+    height: auto;
+}
+
+.single-box p {
+	color: #fff;
+	line-height: 1.9;
+}
+.single-box h3 {
+	font-size: 16px;
+	font-weight: 700;
+	color: #fff;
+}
+.single-box ul {
+	list-style: none;
+	padding: 0;
+}
+.single-box ul li a {
+	text-decoration: none;
+	color: #fff;
+	line-height: 2.5;
+	font-weight: 400;
+}
+.single-box h2 {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 600;
+}
+#basic-addon2 {
+	background: #fe1e4f;
+	color: #fff;
+}
+.socials i {
+	font-size: 18px;
+	margin-right: 15px;
+    color: #FFFFFF;
+    display: inline-block;
+    flex-direction: row;
+    padding-top: 6px;
+    padding-left: 9px;
+    gap: 10px;
+    text-decoration: none;
+    
+    width: 36px;
+    height: 36px;
+    
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 100px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.socials i:active{
+    display: inline-block;
+    flex-direction: row;
+    padding-top: 6px;
+    padding-left: 9px;
+    gap: 10px;
+    
+    width: 36px;
+    height: 36px;
+    
+    background: #2ED67B;
+    border-radius: 40px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+@media (max-width: 767px) {
+	.single-box {
+		margin-bottom: 50px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.single-box {
+		margin-bottom: 50px;
+	}
+}
+.footer-2{ 
+    margin-top: 40px;
+    border-top: #FFFFFF solid 1px;
+    width: 100%;
+    color: #FFFFFF;
+    padding-top: 20px;
+    text-align: center;
+
+}
+
+
+
+
+/* END STYLING */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table; 
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
